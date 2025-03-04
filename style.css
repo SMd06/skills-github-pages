@@ -1,0 +1,203 @@
+/* Variables CSS pour une meilleure gestion des couleurs */
+:root {
+    --primary-color: #e60000; /* Rouge */
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+    --white-color: #fff;
+}
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Style général */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--dark-color);
+}
+
+/* Section accueil */
+#accueil {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--light-color);
+}
+
+#accueil h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Section iPhone 16 */
+#iphone16 {
+    padding: 60px 20px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.iphone-img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#iphone16 h2, #iphone16 h3 {
+    color: var(--primary-color);
+}
+
+#iphone16 ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#iphone16 ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#iphone16 ul li::before {
+    content: '\u2714'; /* Check icon */
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.btn-affiliation {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 3px 10px rgba(230, 0, 0, 0.3);
+}
+
+.btn-affiliation:hover {
+    background-color: #cc0000;
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(230, 0, 0, 0.5);
+}
+
+/* Section produits recommandés */
+#produits {
+    background-color: var(--light-color);
+    padding: 40px;
+    text-align: center;
+}
+
+#produits h2 {
+    color: var(--primary-color);
+}
+
+#produits ul {
+    list-style: none;
+}
+
+#produits ul li {
+    margin: 10px 0;
+}
+
+#produits ul li a {
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#produits ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn-affiliation {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
